@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Brost Restaurant</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background: #d35400;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #fff;
+            text-align: center;
+            padding: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d35400;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            color: #d35400;
+            margin-top: 40px;
+            font-size: 26px;
+        }
+
+        /* Images */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Menu */
+        ul {
+            line-height: 1.8;
+        }
+
+        /* Order buttons */
+        .order-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background: #d35400;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        /* Contact form */
+        form {
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #d35400;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #ddd;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Al Brost</h1>
+    <p>Famous for Shawarma, Burgers & Fast Food</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <p>
+            Al Brost is a well-known fast food restaurant in Mumbai, loved for its
+            juicy shawarmas, burgers, pizzas and wraps. With multiple outlets across
+            the city, Al Brost is a go-to spot for affordable and tasty food.
+        </p>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+        <h2 class="section-title">Menu Highlights</h2>
+        <ul>
+            <li>Chicken & Veg Shawarma</li>
+            <li>Chicken Burgers & Veg Burgers</li>
+            <li>Pizza (Veg & Chicken)</li>
+            <li>Wraps & Rolls</li>
+            <li>French Fries & Snacks</li>
+        </ul>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <h2 class="section-title">Food Gallery</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Burger">
+            <img src="https://images.unsplash.com/photo-1625944525533-473f1a3f6a0a" alt="Shawarma">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Pizza">
+        </div>
+    </section>
+
+    <!-- Order -->
+    <section id="order">
+        <h2 class="section-title">Order Online</h2>
+        <p>Order your favorite food online:</p>
+        <div class="order-buttons">
+            <a href="https://www.zomato.com" target="_blank">Order on Zomato</a>
+            <a href="https://www.swiggy.com" target="_blank">Order on Swiggy</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contact & Location</h2>
+        <p><strong>Multiple outlets across Mumbai</strong></p>
+
+        <!-- Google Map -->
+        <iframe
+            src="https://www.google.com/maps?q=Al%20Brost%20Mumbai&output=embed">
+        </iframe>
+
+        <!-- Contact Form -->
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Al Brost Restaurant | Made with ❤️</p>
+</footer>
+
+</body>
+</html>
